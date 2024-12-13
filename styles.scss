@@ -1,0 +1,53 @@
+$color_1: #FF6F40;
+
+body{
+    background-color: rgb(192, 188, 184);
+}
+
+nav {
+    background-color:#fff;
+    max-width: 1240px;
+    max-height: 154px;
+    margin: 0 auto;
+    padding: 0 244px;
+    
+    .navbar{
+    
+    }
+    .container-fluid{
+
+    }
+    .collapse{
+        justify-content: flex-end;
+    }
+}
+.login  {
+    margin: 20px;
+    min-height: 56px;
+    min-width: 110px;
+    &:hover{
+        background-color: $color_1;
+    }
+}
+header {
+    
+    button {
+        width: 215px;
+        height: 56px;
+    }
+    span{
+        color: $color_1;
+    }
+    >div{
+        margin: 0 auto;
+        max-width: 1240px;
+        background-color:#fff;
+        .btn{
+            background-color:#5A9A5B ;
+            &:hover{
+                background-color: $color_1;
+        }
+        
+    }
+}
+}
