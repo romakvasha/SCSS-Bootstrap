@@ -23,6 +23,7 @@ nav .collapse {
 }
 
 header button {
+  margin: 0 auto;
   width: 215px;
   height: 56px;
 }
@@ -39,4 +40,23 @@ header > div .btn {
 }
 header > div .btn:hover {
   background-color: #FF6F40;
+}
+
+.foto {
+  margin: 0 auto;
+  max-width: 1240px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.foto figure {
+  margin: 30px 10px;
+}
+.foto figure img {
+  max-width: 280px;
+  max-height: 500px;
 }/*# sourceMappingURL=styles.css.map */
