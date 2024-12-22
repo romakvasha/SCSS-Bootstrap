@@ -12,7 +12,7 @@ body {
 
 nav {
   background-color: #fff;
-  max-width: 1240px;
+  max-width: 1728px;
   max-height: 154px;
   margin: 0 auto;
   padding: 0 244px;
@@ -40,7 +40,7 @@ header span {
 }
 header > div {
   margin: 0 auto;
-  max-width: 1240px;
+  max-width: 1728px;
   background-color: #fff;
 }
 header > div .btn {
@@ -51,6 +51,8 @@ header > div .btn:hover {
 }
 
 .foto {
+  padding-left: 244px;
+  padding-right: 244px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,41 +60,48 @@ header > div .btn:hover {
   flex-wrap: wrap;
   align-content: center;
 }
+@media (min-width: 480px) and (max-width: 1718px) {
+  .foto {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .foto figure {
-  margin: 30px 10px;
+  margin: 0 auto;
 }
 .foto figure img {
-  max-width: 280px;
+  max-width: 300px;
   max-height: 500px;
 }
 
 section {
   margin: 0 auto;
-  max-width: 1240px;
+  max-width: 1728px;
   background-color: #fff;
 }
 
 .content {
   max-width: 604px;
   max-height: 452px;
-  padding-left: 70px;
-  padding-right: 70px;
+  margin-bottom: 50px;
+  padding-right: 20px;
 }
 .content h1 {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .content h1 span {
   color: #FF6F40;
 }
 .content p {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 .content div {
   display: flex;
-  justify-content: center;
 }
 .content div div {
+  margin-right: 20px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .content2 {
@@ -103,6 +112,14 @@ section {
   flex-wrap: wrap;
   align-content: center;
   padding-top: 100px;
+  padding-left: 244px;
+  padding-right: 244px;
+}
+@media (min-width: 480px) and (max-width: 1718px) {
+  .content2 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 .content2 .content3 {
   display: flex;
@@ -114,4 +131,56 @@ section {
   min-height: 452px;
   background-image: url(/img/unsplash_sQopSb2K0CU.png);
   background-repeat: no-repeat;
+}
+
+.content4 {
+  padding-left: 244px;
+  padding-right: 244px;
+}
+@media (min-width: 480px) and (max-width: 1718px) {
+  .content4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.content4 h1 {
+  text-align: center;
+}
+.content4 h1 span {
+  color: #FF6F40;
+}
+.content4 div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.content4 div div {
+  min-height: 156px;
+  min-width: 604px;
+  flex-direction: column;
+}
+
+.content5 article {
+  padding-left: 244px;
+  padding-right: 244px;
+}
+@media (min-width: 480px) and (max-width: 1718px) {
+  .content5 article {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.content5 article h1 span {
+  color: #FF6F40;
+}
+.content5 article div {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.content5 article div figure {
+  margin: 0 auto;
+  max-height: 411px;
+  max-width: 385px;
 }/*# sourceMappingURL=styles.css.map */
