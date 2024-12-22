@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   background-color: rgb(192, 188, 184);
 }
@@ -43,9 +51,6 @@ header > div .btn:hover {
 }
 
 .foto {
-  margin: 0 auto;
-  max-width: 1240px;
-  background-color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,4 +64,54 @@ header > div .btn:hover {
 .foto figure img {
   max-width: 280px;
   max-height: 500px;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 1240px;
+  background-color: #fff;
+}
+
+.content {
+  max-width: 604px;
+  max-height: 452px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+.content h1 {
+  margin-bottom: 40px;
+}
+.content h1 span {
+  color: #FF6F40;
+}
+.content p {
+  margin-bottom: 60px;
+}
+.content div {
+  display: flex;
+  justify-content: center;
+}
+.content div div {
+  flex-wrap: wrap;
+}
+
+.content2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  padding-top: 100px;
+}
+.content2 .content3 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 604px;
+  min-height: 452px;
+  background-image: url(/img/unsplash_sQopSb2K0CU.png);
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=styles.css.map */
