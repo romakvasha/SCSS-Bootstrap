@@ -14,7 +14,7 @@ body{
 
 nav {
     background-color:$color_2;
-    max-width: 1240px;
+    max-width: 1728px;
     max-height: 154px;
     margin: 0 auto;
     padding: 0 244px;
@@ -43,7 +43,7 @@ header {
     }
     >div{
         margin: 0 auto;
-        max-width: 1240px;
+        max-width: 1728px;
         background-color:$color_2;
         .btn{
             background-color:#5A9A5B ;
@@ -56,45 +56,54 @@ header {
 }
 
 .foto {
+    padding-left: 244px;
+    padding-right: 244px;
     display: flex;
     justify-content: center; 
     align-items: center;  
     flex-direction: row; 
     flex-wrap: wrap; 
     align-content: center;
+    @media (min-width: 480px) and (max-width: 1718px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+
     figure {
-        margin: 30px 10px;
+        margin: 0 auto;
         img{
-           max-width: 280px;
+           max-width: 300px;
            max-height: 500px;
         }
     }
 }
 section {
     margin: 0 auto;
-    max-width: 1240px;
+    max-width: 1728px;
     background-color: $color_2;
 }
 .content {
     max-width: 604px;
     max-height: 452px;
-    padding-left: 70px;
-    padding-right: 70px;
+    margin-bottom: 50px;
+    padding-right: 20px;
     h1{
-        margin-bottom: 40px;
+        margin-bottom: 20px;
         span{
             color: $color_1;
             
         }
     }
     p{
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
     div {
         display: flex;
-        justify-content: center; 
         div{
+            margin-right: 20px;
             flex-wrap: wrap;
+            margin-top: 20px;
         }
     }
 }
@@ -106,6 +115,12 @@ section {
     flex-wrap: wrap; 
     align-content: center;
     padding-top: 100px;
+    padding-left: 244px;
+    padding-right: 244px;
+    @media (min-width: 480px) and (max-width: 1718px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
         .content3{
             display: flex;
             justify-content: flex-end; 
@@ -118,5 +133,58 @@ section {
             background-repeat: no-repeat;
         }
 }
+.content4 {
+    padding-left: 244px;
+    padding-right: 244px;
+    @media (min-width: 480px) and (max-width: 1718px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+   h1{
+    text-align: center;
+    span{
+        color: $color_1;
+    }
+   }
+   div{
+    
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap; 
+    div{
+        min-height: 156px;
+        min-width: 604px;
+        flex-direction: column;
+    }
+   }
+}
 
+.content5 {
+    article {
+        padding-left: 244px;
+        padding-right: 244px;
+        @media (min-width: 480px) and (max-width: 1718px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        h1{
+            span{
+                color: $color_1;
+            }
+    }   div{
+        display: flex;
+        justify-content: center;  
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        
+            figure {
+            margin: 0 auto;
+            max-height: 411px;
+            max-width: 385px;
+            
+    }
+        
 
+    }
+    }
+}
