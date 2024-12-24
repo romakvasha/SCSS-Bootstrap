@@ -218,6 +218,7 @@ header > div .btn:hover {
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
+  margin-bottom: 60px;
 }
 .content6 > div h1 {
   min-height: 192px;
@@ -247,6 +248,7 @@ header > div .btn:hover {
   flex-wrap: wrap;
   align-content: center;
   margin: 0 auto;
+  margin-bottom: 100px;
 }
 .content6 figure .img1 {
   display: flex;
@@ -259,6 +261,7 @@ header > div .btn:hover {
   min-height: 590px;
   max-width: 370px;
   color: #fff;
+  border-radius: 30px;
 }
 .content6 figure .img2 {
   display: flex;
@@ -272,6 +275,7 @@ header > div .btn:hover {
   min-height: 590px;
   max-width: 370px;
   color: #fff;
+  border-radius: 30px;
 }
 .content6 figure .img3 {
   display: flex;
@@ -285,4 +289,108 @@ header > div .btn:hover {
   min-height: 590px;
   max-width: 370px;
   color: #fff;
+  border-radius: 30px;
+}
+
+.content7 {
+  padding-left: 244px;
+  padding-right: 244px;
+}
+@media (min-width: 400px) and (max-width: 1718px) {
+  .content7 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.content7 > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.content7 > div h1 {
+  min-height: 96px;
+  max-width: 391px;
+}
+.content7 > div > p {
+  min-height: 96px;
+  max-width: 742px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.menu figure {
+  height: 384px;
+  width: 286px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.menu figure div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.menu figure div button:hover {
+  background-color: #FF6F40;
+}
+
+.content8 {
+  padding-left: 244px;
+  padding-right: 244px;
+}
+@media (min-width: 400px) and (max-width: 1718px) {
+  .content8 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.content8 > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.content8 > div div {
+  width: 500px;
+  height: 500px;
+}
+.content8 > div div h1 {
+  margin-bottom: 40px;
+}
+.content8 > div .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
+  width: 600px;
+  height: 350px;
+}
+.content8 > div .text img {
+  height: 74px;
+  width: 74px;
+}
+.content8 > div .text div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.content8 > div .text div h3 {
+  margin-bottom: 30px;
 }/*# sourceMappingURL=styles.css.map */
