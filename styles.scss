@@ -25,6 +25,9 @@ nav {
     max-height: 154px;
     margin: 0 auto;
     padding: 0 244px;
+    div{
+
+    }
     
     .collapse{
         justify-content: flex-end;
@@ -397,4 +400,115 @@ header {
             }
         }
     }    
+}
+
+.content9 {
+    padding-left: 244px;
+    padding-right: 244px;
+    @media (min-width: 400px) and (max-width: 1718px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    >div{
+        display: flex;
+        justify-content: space-between; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+        margin-bottom: 30px;
+        h1{
+            min-height: 96px;
+            width: 530px;
+        }
+        >p{
+            min-height: 96px;
+            width: 530px;
+        }
+    }
+    .maps{
+            display: flex;
+            justify-content: space-evenly; 
+            align-items: stretch;  
+            flex-direction: column; 
+            flex-wrap: wrap; 
+            
+            width: 660px;
+            height: 530px;
+        .text{
+            display: flex;
+            justify-content: space-between; 
+            align-items: stretch;  
+            flex-direction:row; 
+            flex-wrap: wrap; 
+            align-content: stretch;
+           div{
+                width: 300px;
+                height: 100px;
+           }
+        }
+    }
+}
+form{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        height: 530px;
+        width: 508px;
+    input{
+        outline:0;
+        color: #333333;
+        font-size: 24px;
+        padding: 25px 10px;
+        width: 508px;
+        height: 48px;
+        border-radius: 0px;
+        border: 1px solid #d6d6d6;
+        background-color: #F5F5F5FF;
+
+        &:active, &:focus {
+            background-color: #ffffff;
+            color: #000000;
+            border: 1px solid #969696;
+        }
+    }
+    .btn{
+        width: 530px;
+        height: 48px;
+        border-radius: 10px; 
+        background-color:#5A9A5B ;
+        color: $color_2;
+        &:hover{
+            background-color: $color_1;
+        }
+    }   
+}
+
+footer{
+    padding-left: 244px;
+    padding-right: 244px;
+    display: flex;
+    justify-content: space-between;  
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-content: center;
+    background-color: #000000;
+    margin: 0 auto;
+    max-width: 1728px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    @media (min-width: 400px) and (max-width: 1718px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .footer{
+        height: 307px;
+        width: 398px;
+    }
+    div,ul{
+        display: flex;
+        justify-content: space-evenly;  
+        flex-direction: column; 
+        flex-wrap: wrap; 
+        align-content: center;
+        color: $color_2;
+    }
 }
