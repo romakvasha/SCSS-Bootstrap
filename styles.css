@@ -393,4 +393,118 @@ header > div .btn:hover {
 }
 .content8 > div .text div h3 {
   margin-bottom: 30px;
+}
+
+.content9 {
+  padding-left: 244px;
+  padding-right: 244px;
+}
+@media (min-width: 400px) and (max-width: 1718px) {
+  .content9 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.content9 > div {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.content9 > div h1 {
+  min-height: 96px;
+  width: 530px;
+}
+.content9 > div > p {
+  min-height: 96px;
+  width: 530px;
+}
+.content9 .maps {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: stretch;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 660px;
+  height: 530px;
+}
+.content9 .maps .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+.content9 .maps .text div {
+  width: 300px;
+  height: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 530px;
+  width: 508px;
+}
+form input {
+  outline: 0;
+  color: #333333;
+  font-size: 24px;
+  padding: 25px 10px;
+  width: 508px;
+  height: 48px;
+  border-radius: 0px;
+  border: 1px solid #d6d6d6;
+  background-color: whitesmoke;
+}
+form input:active, form input:focus {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #969696;
+}
+form .btn {
+  width: 530px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: #5A9A5B;
+  color: #fff;
+}
+form .btn:hover {
+  background-color: #FF6F40;
+}
+
+footer {
+  padding-left: 244px;
+  padding-right: 244px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  background-color: #000000;
+  margin: 0 auto;
+  max-width: 1728px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+@media (min-width: 400px) and (max-width: 1718px) {
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+footer .footer {
+  height: 307px;
+  width: 398px;
+}
+footer div, footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  color: #fff;
 }/*# sourceMappingURL=styles.css.map */
