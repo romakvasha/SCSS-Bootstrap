@@ -16,6 +16,14 @@ section {
   background-color: #fff;
   padding-bottom: 50px;
   padding-top: 50px;
+  padding-left: 244px;
+  padding-right: 244px;
+}
+@media (min-width: 370px) and (max-width: 1718px) {
+  section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 nav {
@@ -59,20 +67,12 @@ header > div .btn:hover {
 }
 
 .foto {
-  padding-left: 244px;
-  padding-right: 244px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: center;
-}
-@media (min-width: 480px) and (max-width: 1718px) {
-  .foto {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 }
 .foto figure {
   margin: 0 auto;
@@ -82,31 +82,31 @@ header > div .btn:hover {
   max-height: 500px;
 }
 
-.content {
+.content2 {
   max-width: 604px;
   max-height: 452px;
   margin-bottom: 50px;
   padding-right: 20px;
 }
-.content h1 {
+.content2 h1 {
   margin-bottom: 60px;
 }
-.content h1 span {
+.content2 h1 span {
   color: #FF6F40;
 }
-.content p {
+.content2 p {
   margin-bottom: 30px;
 }
-.content div {
+.content2 div {
   display: flex;
 }
-.content div div {
+.content2 div div {
   margin-right: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
 }
 
-.content2 {
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,16 +114,8 @@ header > div .btn:hover {
   flex-wrap: wrap;
   align-content: center;
   padding-top: 100px;
-  padding-left: 244px;
-  padding-right: 244px;
 }
-@media (min-width: 480px) and (max-width: 1718px) {
-  .content2 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-.content2 .content3 {
+.content .content3 {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -134,16 +126,11 @@ header > div .btn:hover {
   background-image: url(/img/unsplash_sQopSb2K0CU.png);
   background-repeat: no-repeat;
 }
-
 .content4 {
-  padding-left: 244px;
-  padding-right: 244px;
-}
-@media (min-width: 480px) and (max-width: 1718px) {
-  .content4 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .content4 h1 {
   text-align: center;
@@ -163,16 +150,6 @@ header > div .btn:hover {
   flex-direction: column;
 }
 
-.content5 article {
-  padding-left: 244px;
-  padding-right: 244px;
-}
-@media (min-width: 480px) and (max-width: 1718px) {
-  .content5 article {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
 .content5 article h1 {
   margin-bottom: 60px;
 }
@@ -201,16 +178,6 @@ header > div .btn:hover {
   margin-bottom: 30px;
 }
 
-.content6 {
-  padding-left: 244px;
-  padding-right: 244px;
-}
-@media (min-width: 400px) and (max-width: 1718px) {
-  .content6 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
 .content6 > div {
   display: flex;
   justify-content: center;
@@ -292,16 +259,6 @@ header > div .btn:hover {
   border-radius: 30px;
 }
 
-.content7 {
-  padding-left: 244px;
-  padding-right: 244px;
-}
-@media (min-width: 400px) and (max-width: 1718px) {
-  .content7 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
 .content7 > div {
   display: flex;
   justify-content: space-between;
@@ -347,16 +304,6 @@ header > div .btn:hover {
   background-color: #FF6F40;
 }
 
-.content8 {
-  padding-left: 244px;
-  padding-right: 244px;
-}
-@media (min-width: 400px) and (max-width: 1718px) {
-  .content8 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
 .content8 > div {
   display: flex;
   justify-content: space-between;
@@ -395,32 +342,22 @@ header > div .btn:hover {
   margin-bottom: 30px;
 }
 
-.content9 {
-  padding-left: 244px;
-  padding-right: 244px;
-}
-@media (min-width: 400px) and (max-width: 1718px) {
-  .content9 {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-}
-.content9 > div {
+.address > div {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 30px;
 }
-.content9 > div h1 {
+.address > div h1 {
   min-height: 96px;
   width: 530px;
 }
-.content9 > div > p {
+.address > div > p {
   min-height: 96px;
   width: 530px;
 }
-.content9 .maps {
+.address .maps {
   display: flex;
   justify-content: space-evenly;
   align-items: stretch;
@@ -429,7 +366,7 @@ header > div .btn:hover {
   width: 660px;
   height: 530px;
 }
-.content9 .maps .text {
+.address .maps .text {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -437,7 +374,7 @@ header > div .btn:hover {
   flex-wrap: wrap;
   align-content: stretch;
 }
-.content9 .maps .text div {
+.address .maps .text div {
   width: 300px;
   height: 100px;
 }
