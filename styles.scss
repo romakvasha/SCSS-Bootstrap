@@ -1,6 +1,36 @@
 $color_1: #FF6F40;
 $color_2: #fff;
 
+%flex-row {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    align-content: center;
+}
+%flex-column {
+    display: flex;
+    justify-content: space-between;  
+    flex-direction: column; 
+    flex-wrap: wrap; 
+    align-content: center;
+}
+
+@mixin img($background-image) {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: stretch; 
+    flex-direction: column;
+    align-items: center; 
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    min-height: 590px;
+    max-width: 370px;
+    color: $color_2;
+    border-radius: 30px;
+}
+
 html {
     box-sizing: border-box;
   }
@@ -20,8 +50,8 @@ section {
     padding-left: 244px;
     padding-right: 244px;
     @media (min-width: 370px) and (max-width: 1718px) {
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -69,13 +99,7 @@ header {
 }
 
 .foto {
-   
-    display: flex;
-    justify-content: center; 
-    align-items: center;  
-    flex-direction: row; 
-    flex-wrap: wrap; 
-    align-content: center;
+    @extend %flex-row;
     figure {
         margin: 0 auto;
         img{
@@ -110,12 +134,7 @@ header {
     }
 }
 .content {
-    display: flex;
-    justify-content: center; 
-    align-items: center;  
-    flex-direction: row; 
-    flex-wrap: wrap; 
-    align-content: center;
+    @extend %flex-row;
     padding-top: 100px;
         .content3{
             display: flex;
@@ -133,10 +152,6 @@ header {
         }
 }
 .content4 {
-    display: flex;
-        justify-content: center;  
-        flex-direction: row; 
-        flex-wrap: wrap; 
    h1{
     text-align: center;
     margin-bottom: 60px;
@@ -157,6 +172,7 @@ header {
 }
 
 .content5 {
+    margin-bottom: 100px;
     article {
         h1{ 
             margin-bottom: 60px;
@@ -168,11 +184,7 @@ header {
            margin-bottom: 60px;     
         }
         div{
-        display: flex;
-        justify-content: center;  
-        flex-direction: row; 
-        flex-wrap: wrap; 
-
+            @extend %flex-row;
             figure {
             margin: 0 auto;
             max-height: 411px;
@@ -191,12 +203,7 @@ header {
 
 .content6 {
     >div {
-        display: flex;
-        justify-content: center; 
-        align-items: center;  
-        flex-direction: row; 
-        flex-wrap: wrap; 
-        align-content: center;
+        @extend %flex-row;
         margin-bottom: 60px;
         h1{
             min-height: 192px;
@@ -220,66 +227,27 @@ header {
         }
     }
     figure{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;  
-        flex-direction: row; 
-        flex-wrap: wrap; 
-        align-content: center;
+        @extend %flex-row;
+        justify-content: space-between;        
         margin: 0 auto;
         margin-bottom: 100px;
         .img1{
-            display: flex;
-            justify-content: flex-end; 
-            align-items: stretch; 
-            flex-direction: column;
-            align-items: center; 
-            background-image: url(/img/card\ \(1\).png);
-            background-repeat: no-repeat;
-            min-height: 590px;
-            max-width: 370px;
-            color: $color_2;
-            border-radius: 30px;
+            @include img(url(/img/card\ \(1\).png));
         }
         .img2{
-            display: flex;
-            justify-content: flex-end; 
-            align-items: stretch; 
-            flex-direction: column;
-            align-items: center;  
-            background-image: url(/img/card\ \(2\).png);
-            background-repeat: no-repeat;
-            flex-direction:column;
-            min-height: 590px;
-            max-width: 370px;
-            color: $color_2;
-            border-radius: 30px;
+            @include img(url(/img/card\ \(2\).png));
         }
         .img3{
-            display: flex;
-            justify-content: flex-end; 
-            align-items: stretch; 
-            flex-direction: column;
-            align-items: center; 
-            background-image: url(/img/card\ \(3\).png);
-            background-repeat: no-repeat;
-            flex-direction:column;
-            min-height: 590px;
-            max-width: 370px;
-            color: $color_2;
-            border-radius: 30px;
-            
+            @include img(url(/img/card\ \(3\).png));        
         }
     }
 }
 
 
-.content7{
+.content7 {
         >div{
-            display: flex;
+            @extend %flex-row;
             justify-content: space-between; 
-            flex-direction: row; 
-            flex-wrap: wrap; 
             margin-bottom: 30px;
             h1{
                 min-height: 96px;
@@ -293,27 +261,20 @@ header {
 }
 
 .menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    flex-direction: row; 
-    flex-wrap: wrap; 
-    align-content: stretch;
+    @extend %flex-row;
     figure{
+        border-radius: 27px;
+        background: $color_2;
+        box-shadow:  7px 7px 18px #6c6c6c,-7px -7px 18px #ffffff;
         height: 384px;
         width: 286px;
-        display: flex;
-        justify-content: space-between;  
-        flex-direction: column; 
-        flex-wrap: wrap; 
-        align-content: center;
+        @extend %flex-column;
+        img{
+            border-radius: 27px 27px 0 0;
+        }
             div{
-                display: flex;
+                @extend %flex-row;
                 justify-content: space-evenly;
-                align-items: center;  
-                flex-direction: row; 
-                flex-wrap: wrap; 
-                align-content:center;
                 button{
                     &:hover{
                     background-color: $color_1;}
@@ -324,12 +285,7 @@ header {
 
 .content8{
     >div{
-        display: flex;
-        justify-content: space-between; 
-        align-items: center; 
-        flex-direction: row; 
-        flex-wrap: wrap; 
-        align-content: center;
+        @extend %flex-row;
         div{
             h1{
                 margin-bottom: 40px;
@@ -365,10 +321,8 @@ header {
 
 .address {
     >div{
-        display: flex;
-        justify-content: space-between; 
-        flex-direction: row; 
-        flex-wrap: wrap; 
+        @extend %flex-row; 
+        justify-content: space-between;
         margin-bottom: 30px;
         h1{
             min-height: 96px;
@@ -380,21 +334,12 @@ header {
         }
     }
     .maps{
-            display: flex;
-            justify-content: space-evenly; 
-            align-items: stretch;  
-            flex-direction: column; 
-            flex-wrap: wrap; 
-            
-            width: 660px;
-            height: 530px;
+        @extend %flex-column;
+        max-width: 660px;
+        max-height: 530px;
         .text{
-            display: flex;
+            @extend %flex-row;
             justify-content: space-between; 
-            align-items: stretch;  
-            flex-direction:row; 
-            flex-wrap: wrap; 
-            align-content: stretch;
            div{
                 width: 300px;
                 height: 100px;
@@ -403,48 +348,45 @@ header {
     }
 }
 form{
-        display: flex;
-        flex-direction: column;
-        justify-content:space-between;
-        height: 530px;
-        width: 508px;
-    input{
-        outline:0;
-        color: #333333;
-        font-size: 24px;
-        padding: 25px 10px;
-        width: 508px;
-        height: 48px;
-        border-radius: 0px;
-        border: 1px solid #d6d6d6;
-        background-color: #F5F5F5FF;
+    @extend %flex-column;
+    
+    height: 530px;
+    width: 508px;
+        input{
+            outline:0;
+            color: #333333;
+            font-size: 24px;
+            padding: 25px 10px;
+            width: 508px;
+            height: 48px;
+            border-radius: 0px;
+            border: 1px solid #d6d6d6;
+            background-color: #F5F5F5FF;
 
-        &:active, &:focus {
-            background-color: #ffffff;
-            color: #000000;
-            border: 1px solid #969696;
+            &:active, &:focus {
+                background-color: #ffffff;
+                color: #000000;
+                border: 1px solid #969696;
+            }
         }
-    }
-    .btn{
-        width: 530px;
-        height: 48px;
-        border-radius: 10px; 
-        background-color:#5A9A5B ;
-        color: $color_2;
-        &:hover{
-            background-color: $color_1;
-        }
-    }   
+        .btn{
+            width: 530px;
+            height: 48px;
+            border-radius: 10px; 
+            background-color:#5A9A5B ;
+            color: $color_2;
+            &:hover{
+                background-color: $color_1;
+            }
+        }   
 }
 
 footer{
     padding-left: 244px;
     padding-right: 244px;
-    display: flex;
-    justify-content: space-between;  
-    flex-direction: row; 
-    flex-wrap: wrap; 
-    align-content: center;
+    @extend %flex-row;
+    justify-content: space-between;
+    align-items: stretch; 
     background-color: #000000;
     margin: 0 auto;
     max-width: 1728px;
@@ -459,11 +401,7 @@ footer{
         width: 398px;
     }
     div,ul{
-        display: flex;
-        justify-content: space-evenly;  
-        flex-direction: column; 
-        flex-wrap: wrap; 
-        align-content: center;
+        @extend %flex-column;
         color: $color_2;
     }
 }
