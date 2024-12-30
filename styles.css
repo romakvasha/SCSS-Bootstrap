@@ -1,3 +1,20 @@
+footer, .address .maps .text, .address > div, .content8 > div, .menu figure div, .menu, .content7 > div, .content6 figure, .content6 > div, .content5 article div, .content, .foto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+footer div, footer ul, form, .address .maps, .menu figure {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -21,8 +38,8 @@ section {
 }
 @media (min-width: 370px) and (max-width: 1718px) {
   section {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -66,14 +83,6 @@ header > div .btn:hover {
   background-color: #FF6F40;
 }
 
-.foto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-}
 .foto figure {
   margin: 0 auto;
 }
@@ -107,12 +116,6 @@ header > div .btn:hover {
 }
 
 .content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
   padding-top: 100px;
 }
 .content .content3 {
@@ -125,12 +128,6 @@ header > div .btn:hover {
   min-height: 452px;
   background-image: url(/img/unsplash_sQopSb2K0CU.png);
   background-repeat: no-repeat;
-}
-.content4 {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 .content4 h1 {
   text-align: center;
@@ -150,6 +147,9 @@ header > div .btn:hover {
   flex-direction: column;
 }
 
+.content5 {
+  margin-bottom: 100px;
+}
 .content5 article h1 {
   margin-bottom: 60px;
 }
@@ -158,12 +158,6 @@ header > div .btn:hover {
 }
 .content5 article p {
   margin-bottom: 60px;
-}
-.content5 article div {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
 }
 .content5 article div figure {
   margin: 0 auto;
@@ -179,12 +173,6 @@ header > div .btn:hover {
 }
 
 .content6 > div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
   margin-bottom: 60px;
 }
 .content6 > div h1 {
@@ -208,12 +196,7 @@ header > div .btn:hover {
   background-color: #FF6F40;
 }
 .content6 figure {
-  display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -238,7 +221,6 @@ header > div .btn:hover {
   align-items: center;
   background-image: url(/img/card\ \(2\).png);
   background-repeat: no-repeat;
-  flex-direction: column;
   min-height: 590px;
   max-width: 370px;
   color: #fff;
@@ -252,7 +234,6 @@ header > div .btn:hover {
   align-items: center;
   background-image: url(/img/card\ \(3\).png);
   background-repeat: no-repeat;
-  flex-direction: column;
   min-height: 590px;
   max-width: 370px;
   color: #fff;
@@ -260,10 +241,7 @@ header > div .btn:hover {
 }
 
 .content7 > div {
-  display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 .content7 > div h1 {
@@ -275,43 +253,23 @@ header > div .btn:hover {
   max-width: 742px;
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: stretch;
-}
 .menu figure {
+  border-radius: 27px;
+  background: #fff;
+  box-shadow: 7px 7px 18px #6c6c6c, -7px -7px 18px #ffffff;
   height: 384px;
   width: 286px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
+}
+.menu figure img {
+  border-radius: 27px 27px 0 0;
 }
 .menu figure div {
-  display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
 }
 .menu figure div button:hover {
   background-color: #FF6F40;
 }
 
-.content8 > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-}
 .content8 > div div {
   width: 500px;
   height: 500px;
@@ -343,10 +301,7 @@ header > div .btn:hover {
 }
 
 .address > div {
-  display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 .address > div h1 {
@@ -358,21 +313,11 @@ header > div .btn:hover {
   width: 530px;
 }
 .address .maps {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: stretch;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 660px;
-  height: 530px;
+  max-width: 660px;
+  max-height: 530px;
 }
 .address .maps .text {
-  display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: stretch;
 }
 .address .maps .text div {
   width: 300px;
@@ -380,9 +325,6 @@ header > div .btn:hover {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 530px;
   width: 508px;
 }
@@ -416,11 +358,8 @@ form .btn:hover {
 footer {
   padding-left: 244px;
   padding-right: 244px;
-  display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
+  align-items: stretch;
   background-color: #000000;
   margin: 0 auto;
   max-width: 1728px;
@@ -438,10 +377,5 @@ footer .footer {
   width: 398px;
 }
 footer div, footer ul {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: center;
   color: #fff;
 }/*# sourceMappingURL=styles.css.map */
