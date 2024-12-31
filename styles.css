@@ -1,3 +1,4 @@
+@charset "UTF-8";
 footer, .address .maps .text, .address > div, .content8 > div, .menu figure div, .menu, .content7 > div, .content6 figure, .content6 > div, .content5 article div, .content, .foto {
   display: flex;
   justify-content: center;
@@ -24,7 +25,7 @@ html {
 }
 
 body {
-  background-color: rgb(192, 188, 184);
+  background-color: rgb(208, 202, 195);
 }
 
 section {
@@ -85,38 +86,39 @@ header > div .btn:hover {
 
 .foto figure {
   margin: 0 auto;
+  margin-bottom: 20px;
 }
 .foto figure img {
   max-width: 300px;
   max-height: 500px;
 }
 
-.content2 {
+.content {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.content .content2 {
   max-width: 604px;
   max-height: 452px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   padding-right: 20px;
 }
-.content2 h1 {
+.content .content2 h1 {
   margin-bottom: 60px;
 }
-.content2 h1 span {
+.content .content2 h1 span {
   color: #FF6F40;
 }
-.content2 p {
+.content .content2 p {
   margin-bottom: 30px;
 }
-.content2 div {
+.content .content2 div {
   display: flex;
 }
-.content2 div div {
+.content .content2 div div {
   margin-right: 20px;
   flex-wrap: wrap;
   margin-top: 20px;
-}
-
-.content {
-  padding-top: 100px;
 }
 .content .content3 {
   display: flex;
@@ -124,11 +126,16 @@ header > div .btn:hover {
   align-items: flex-end;
   flex-direction: column;
   justify-content: space-between;
-  min-width: 604px;
-  min-height: 452px;
+  max-width: 100%;
+  width: 604px;
+  height: 452px;
   background-image: url(/img/unsplash_sQopSb2K0CU.png);
   background-repeat: no-repeat;
 }
+.content .content3 figure {
+  position: relative;
+}
+
 .content4 h1 {
   text-align: center;
   margin-bottom: 60px;
@@ -173,11 +180,23 @@ header > div .btn:hover {
 }
 
 .content6 > div {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
+}
+@media (min-width: 375px) and (max-width: 1320px) {
+  .content6 > div {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+  }
 }
 .content6 > div h1 {
   min-height: 192px;
   max-width: 604px;
+}
+@media (min-width: 370px) and (max-width: 1317px) {
+  .content6 > div h1 {
+    min-height: 120px;
+  }
 }
 .content6 > div h1 span {
   color: #FF6F40;
@@ -187,16 +206,28 @@ header > div .btn:hover {
   min-height: 192px;
   max-width: 604px;
 }
+@media (min-width: 370px) and (max-width: 1260px) {
+  .content6 > div div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+  }
+}
 .content6 button {
   width: 215px;
   height: 56px;
   background-color: #5A9A5B;
+  margin-top: 20px;
 }
 .content6 button:hover {
   background-color: #FF6F40;
 }
 .content6 figure {
-  justify-content: space-between;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   margin-bottom: 100px;
 }
@@ -212,6 +243,10 @@ header > div .btn:hover {
   max-width: 370px;
   color: #fff;
   border-radius: 30px;
+  margin: 20px;
+}
+.content6 figure .img1 p {
+  text-align: center;
 }
 .content6 figure .img2 {
   display: flex;
@@ -225,6 +260,10 @@ header > div .btn:hover {
   max-width: 370px;
   color: #fff;
   border-radius: 30px;
+  margin: 20px;
+}
+.content6 figure .img2 p {
+  text-align: center;
 }
 .content6 figure .img3 {
   display: flex;
@@ -238,11 +277,24 @@ header > div .btn:hover {
   max-width: 370px;
   color: #fff;
   border-radius: 30px;
+  margin: 20px;
+}
+.content6 figure .img3 p {
+  text-align: center;
 }
 
+.content7 {
+  margin-top: 100px;
+}
 .content7 > div {
   justify-content: space-between;
   margin-bottom: 30px;
+}
+@media (min-width: 370px) and (max-width: 745px) {
+  .content7 > div {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .content7 > div h1 {
   min-height: 96px;
@@ -259,6 +311,7 @@ header > div .btn:hover {
   box-shadow: 7px 7px 18px #6c6c6c, -7px -7px 18px #ffffff;
   height: 384px;
   width: 286px;
+  margin-bottom: 30px;
 }
 .menu figure img {
   border-radius: 27px 27px 0 0;
@@ -326,7 +379,7 @@ header > div .btn:hover {
 
 form {
   height: 530px;
-  width: 508px;
+  max-width: 100%;
 }
 form input {
   outline: 0;
@@ -377,5 +430,34 @@ footer .footer {
   width: 398px;
 }
 footer div, footer ul {
+  justify-content: space-around;
   color: #fff;
+}
+
+/* Стили Тёмной темы */
+body.dark-theme {
+  color: #eee;
+  background: #121212;
+}
+body.dark-theme header {
+  color: #eee;
+}
+body.dark-theme header div {
+  color: #eee;
+  background: #121212;
+}
+body.dark-theme header div h1 {
+  color: #eee;
+}
+body.dark-theme nav {
+  color: #eee;
+  background: #121212;
+}
+body.dark-theme section {
+  color: #eee;
+  background: #121212;
+}
+body.dark-theme section .content7 figure {
+  color: #eee;
+  background: #121212;
 }/*# sourceMappingURL=styles.css.map */

@@ -13,6 +13,14 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
+    <button id="myButton">Натисни мене</button>
+    <script>
+      const button = document.querySelector("#myButton");
+      button.addEventListener("click", () => {
+        document.body.classList.toggle("dark-theme");
+      });
+    </script>
+
     <nav class="navbar navbar-expand-sm sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -61,436 +69,445 @@
 
     <header>
       <div class="px-4 py-5 text-center">
-        <h1 class="display-5 fw-bold text-body-emphasis">
-          <font style="vertical-align: inherit"
-            ><font style="vertical-align: inherit"
-              >Savor the <span>Freshness</span> <br />of Organic Goodness</font
-            ></font
-          >
+        <h1 class="">
+          Savor the <span>Freshness</span> <br />of Organic Goodness
         </h1>
         <div class="col-lg-6 mx-auto">
           <p class="lead mb-4">
-            <font style="vertical-align: inherit"
-              ><font style="vertical-align: inherit"
-                >We believe that healthy eating should be delicious and
-                satisfying. Join us for a culinary experience that nourishes
-                your body and delights your taste buds.</font
-              ></font
-            >
+            We believe that healthy eating should be delicious and satisfying.
+            Join us for a culinary experience that nourishes your body and
+            delights your taste buds.
           </p>
           <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-            <button type="button" class="btn btn-lg px-4 gap-3">
-              <font style="vertical-align: inherit"
-                ><font style="vertical-align: inherit">Menu</font></font
-              >
-            </button>
-            <button type="button" class="btn btn-lg px-4">
-              <font style="vertical-align: inherit"
-                ><font style="vertical-align: inherit">Learn More</font></font
-              >
-            </button>
+            <button type="button" class="btn btn-lg px-4 gap-3">Menu</button>
+            <button type="button" class="btn btn-lg px-4">Learn More</button>
           </div>
         </div>
       </div>
     </header>
     <section>
-      <div class="foto" >
-        <figure>
-          <img class="img-fluid" src="/img/unsplash_30kYZsukwsk.png" alt="foto" />
-        </figure>
-        <figure>
-          <img class="img-fluid" src="/img/unsplash_9jdyCy-bMC4.png" alt="foto" />
-        </figure>
-        <figure>
-          <img class="img-fluid" src="/img/unsplash_kvp1Ppohv9I.png" alt="foto" />
-        </figure>
-        <figure>
-          <img class="img-fluid" src="/img/unsplash_oaz0raysASk.png" alt="foto" />
-        </figure>
-      </div>
-    <div class="content" >
-      <article class="content2">
-        <h1>
-          The Amazing Benefits of Choosing <span>Eco Eats</span> for Your Meals
-        </h1>
-
-        <p>
-          Choosing Eco Eats means nourishing your body with wholesome, organic
-          ingredients. Our meals not only support your health but also
-          contribute to a sustainable future.
-        </p>
-
-        <div>
-          <div>
-            <h4>Health Benefits</h4>
-            Enjoy nutrient-rich meals that boost your energy and support overall
-            wellness
-          </div>
-          <div>
-            <h4>Eco-Friendly Choices</h4>
-            Support sustainable farming practices and reduce your carbon
-            footprint with every bite.
-          </div>
-        </div>
-      </article>
-      <article class="content3">
+      <div class="foto">
         <figure>
           <img
-            src="/img/Highlight-Sparkle-1--Streamline-Beveled-Scribbles.png"
-            alt=""
+            class="img-fluid"
+            src="/img/unsplash_30kYZsukwsk.png"
+            alt="foto"
           />
         </figure>
         <figure>
-          <img src="/img/unsplash_Bo8zk1NObt8.png" alt="" />
+          <img
+            class="img-fluid"
+            src="/img/unsplash_9jdyCy-bMC4.png"
+            alt="foto"
+          />
         </figure>
-      </article>
-    </div>  
-    <div class="content4">
-      <h1>
-        At <span>Eco Eats</span>, we’re proud of our journey towards <br />
-        creating a healthier, more sustainable world.
-      </h1>
-      <div>
-        <div>
-          <h3>
-            <img src="/img/Vector (1).png" alt="" /> 100% Organic Certified
-          </h3>
+        <figure>
+          <img
+            class="img-fluid"
+            src="/img/unsplash_kvp1Ppohv9I.png"
+            alt="foto"
+          />
+        </figure>
+        <figure>
+          <img
+            class="img-fluid"
+            src="/img/unsplash_oaz0raysASk.png"
+            alt="foto"
+          />
+        </figure>
+      </div>
+      <div class="content">
+        <article class="content2">
+          <h1>
+            The Amazing Benefits of Choosing <span>Eco Eats</span> for Your
+            Meals
+          </h1>
+
           <p>
-            We’ve achieved full organic certification, ensuring that every
-            <br />
-            ingredient we use is sustainably sourced and chemical-free.
+            Choosing Eco Eats means nourishing your body with wholesome, organic
+            ingredients. Our meals not only support your health but also
+            contribute to a sustainable future.
           </p>
-        </div>
-        <div>
-          <h3>
+
+          <div>
+            <div>
+              <h4>Health Benefits</h4>
+              Enjoy nutrient-rich meals that boost your energy and support
+              overall wellness
+            </div>
+            <div>
+              <h4>Eco-Friendly Choices</h4>
+              Support sustainable farming practices and reduce your carbon
+              footprint with every bite.
+            </div>
+          </div>
+        </article>
+        <article class="content3">
+          <figure>
             <img
-              src="/img/Smiley-Grinding--Streamline-Beveled-Scribbles.png"
+              src="/img/Highlight-Sparkle-1--Streamline-Beveled-Scribbles.png"
               alt=""
             />
-            20,000+ Happy Customers
-          </h3>
-          <p>
-            Thousands of people have embraced a healthier lifestyle with our
-            fresh, organic meals. <br />
-            Join a growing community of health-conscious eaters!
-          </p>
-        </div>
-        <div>
-          <h3>
-            <img src="/img/Heart--Streamline-Beveled-Scribbles.png" alt="" /> 5
-            Tons of Plastic Saved
-          </h3>
-          <p>
-            Through our eco-friendly packaging and waste reduction
-            initiatives,<br />
-            we’ve saved over 5 tons of plastic from landfills.
-          </p>
-        </div>
-        <div>
-          <h3><img src="/img/Vector 2.png" alt="" /> 1,000 Meals Donated</h3>
-          <p>
-            We believe in giving back. We’ve donated over 1,000 meals to<br />
-            communities in need, ensuring everyone has access to nutritious
-            food.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="content5">
-      <article>
-        <h1>Why Choose <span>Eco Eats?</span></h1>
-        <p>
-          At Eco Eats, we believe that healthy eating should never compromise on
-          flavor. Our dishes are crafted from sustainably sourced ingredients,
-          ensuring that every bite is not only delicious but also good for the
-          planet. Join us in our mission to promote wellness through nutritious
-          meals that cater to all dietary preferences.
-        </p>
-        <div>
-          <figure>
-            <img src="/img/unsplash_n8vDuIpGb0c.png" alt="" />
-            <figcaption>
-              <h3>100% Organic & Locally Sourced</h3>
-              <p>
-                Every dish is made from pure, sustainably grown ingredients. No
-                chemicals, no preservatives—just food the way nature intended.
-              </p>
-            </figcaption>
           </figure>
           <figure>
-            <img src="/img/unsplash_xmibn7mzXV0.png" alt="" />
-            <figcaption>
-              <h3>Eco-Friendly Practices</h3>
-              <p>
-                We’re committed to reducing our carbon footprint. From our
-                biodegradable packaging to minimizing food waste, sustainability
-                is at the heart of everything we do.
-              </p>
-            </figcaption>
+            <img src="/img/unsplash_Bo8zk1NObt8.png" alt="" />
           </figure>
-          <figure>
-            <img src="/img/unsplash_Orz90t6o0e4.png" alt="" />
-            <figcaption>
-              <h3>Tailored to Your Lifestyle</h3>
-              <p>
-                Vegan, gluten-free, paleo? We’ve got you covered. Our diverse
-                menu ensures that there’s something for everyone, regardless of
-                dietary preference.
-              </p>
-            </figcaption>
-          </figure>
-        </div>
-      </article>
-    </div>
-    <div class="content6">
-      <div>
-        <h1>Sustainable Journey from Farm to Table at <span>Eco Eats</span></h1>
+        </article>
+      </div>
+      <div class="content4">
+        <h1>
+          At <span>Eco Eats</span>, we’re proud of our journey towards <br />
+          creating a healthier, more sustainable world.
+        </h1>
         <div>
-          <p>
-            Our ingredients are sourced from local farms that prioritize
-            sustainable practices, ensuring every meal is not only delicious but
-            also environmentally friendly. From the moment we select our produce
-            to the time we serve your meal, quality is our top priority.
-          </p>
-          <button type="button" class="btn btn-lg px-4">
-            <font style="vertical-align: inherit"
-              ><font style="vertical-align: inherit">See All Menu</font></font
-            >
-          </button>
-        </div>
-      </div>
-      <figure>
-        <div class="img1">
-          <h3>Power Bowls</h3>
-          <p>Loaded with nutrient-packed greens, grains, and proteins.</p>
-        </div>
-        <div class="img2">
-          <h3>Smoothie Bliss</h3>
-          <p>Blended to perfection with superfoods and plant-based goodness.</p>
-        </div>
-        <div class="img3">
-          <h3>Organic Wraps & Salads</h3>
-          <p>
-            Fresh, light, and satisfying meals to keep you energized all day
-            long.
-          </p>
-        </div>
-      </figure>
-    </div>
-    <div class="content7">
-      <div>
-        <h1>Power Bowls</h1>
-        <p>
-          Crafted with fresh, organic ingredients, each bowl is a perfect
-          balance of proteins, healthy fats, and vibrant vegetables. Whether
-          you're seeking a plant-based boost or a protein-packed meal, our Power
-          Bowls provide wholesome, delicious options that nourish and satisfy.
-        </p>
-      </div>
-      <div class="menu">
-        <figure>
-          <img src="/img/Image.png" alt="" />
-          <figcaption>
-            <h4>Green Energy Bowl</h4>
-            <p>Packed with superfoods to fuel your day.</p>
-            <div>
-              <h3>$10.99</h3>
-              <button type="button" class="btn btn-warning">Order Now</button>
-            </div>
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img src="/img/Image+Avatar.png" alt="" />
-          <figcaption>
-            <h4>Mediterranean Bliss Bowl</h4>
-            <p>A taste of the Mediterranean, bursting with flavor.</p>
-            <div>
-              <h3>$11.49</h3>
-              <button type="button" class="btn btn-warning">Order Now</button>
-            </div>
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img src="/img/Image (1).png" alt="" />
-          <figcaption>
-            <h4>Protein Powerhouse Bowl</h4>
-            <p>The perfect balance of protein and nutrition.</p>
-            <div>
-              <h3>$12.49</h3>
-              <button type="button" class="btn btn-warning">Order Now</button>
-            </div>
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img src="/img/Image (2).png" alt="" />
-          <figcaption>
-            <h4>Tropical Bowl</h4>
-            <p>A refreshing blend of tropical flavors.</p>
-            <div>
-              <h3>$11.99</h3>
-              <button type="button" class="btn btn-warning">Order Now</button>
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="content7">
-      <div>
-        <h1>Power Bowls</h1>
-        <p>
-          Crafted with fresh, organic ingredients, each bowl is a perfect
-          balance of proteins, healthy fats, and vibrant vegetables. Whether
-          you're seeking a plant-based boost or a protein-packed meal, our Power
-          Bowls provide wholesome, delicious options that nourish and satisfy.
-        </p>
-      </div>
-      <div class="menu">
-        <figure>
-          <img src="/img/Image.png" alt="" />
-          <figcaption>
-            <h4>Green Energy Bowl</h4>
-            <p>Packed with superfoods to fuel your day.</p>
-            <div>
-              <h3>$10.99</h3>
-              <button type="button" class="btn btn-warning">Order Now</button>
-            </div>
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img src="/img/Image+Avatar.png" alt="" />
-          <figcaption>
-            <h4>Mediterranean Bliss Bowl</h4>
-            <p>A taste of the Mediterranean, bursting with flavor.</p>
-            <div>
-              <h3>$11.49</h3>
-              <button type="button" class="btn btn-warning">Order Now</button>
-            </div>
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img src="/img/Image (1).png" alt="" />
-          <figcaption>
-            <h4>Protein Powerhouse Bowl</h4>
-            <p>The perfect balance of protein and nutrition.</p>
-            <div>
-              <h3>$12.49</h3>
-              <button type="button" class="btn btn-warning">Order Now</button>
-            </div>
-          </figcaption>
-        </figure>
-
-        <figure>
-          <img src="/img/Image (2).png" alt="" />
-          <figcaption>
-            <h4>Tropical Bowl</h4>
-            <p>A refreshing blend of tropical flavors.</p>
-            <div>
-              <h3>$11.99</h3>
-              <button type="button" class="btn btn-warning">Order Now</button>
-            </div>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-    <div class="content8">
-      <div>
-        <div>
-          <h1>What Our Customers Are Saying</h1>
-          <img src="/img/unsplash_r_VLi4NDa9c.png" alt="" />
-        </div>
-        <div class="text">
-          <img
-            src="/img/Highlight-Quote-Left--Streamline-Beveled-Scribbles.png"
-            alt=""
-          />
           <div>
             <h3>
-              Eco Eats has completely transformed the way I eat! The food is
-              fresh, flavorful, and I love knowing that everything is 100%
-              organic. My go-to for a quick, healthy meal!
+              <img src="/img/Vector (1).png" alt="" /> 100% Organic Certified
             </h3>
-            <p>— Sarah M., Loyal Customer</p>
+            <p>
+              We’ve achieved full organic certification, ensuring that every
+              <br />
+              ingredient we use is sustainably sourced and chemical-free.
+            </p>
+          </div>
+          <div>
+            <h3>
+              <img
+                src="/img/Smiley-Grinding--Streamline-Beveled-Scribbles.png"
+                alt=""
+              />
+              20,000+ Happy Customers
+            </h3>
+            <p>
+              Thousands of people have embraced a healthier lifestyle with our
+              fresh, organic meals. <br />
+              Join a growing community of health-conscious eaters!
+            </p>
+          </div>
+          <div>
+            <h3>
+              <img src="/img/Heart--Streamline-Beveled-Scribbles.png" alt="" />
+              5 Tons of Plastic Saved
+            </h3>
+            <p>
+              Through our eco-friendly packaging and waste reduction
+              initiatives,<br />
+              we’ve saved over 5 tons of plastic from landfills.
+            </p>
+          </div>
+          <div>
+            <h3><img src="/img/Vector 2.png" alt="" /> 1,000 Meals Donated</h3>
+            <p>
+              We believe in giving back. We’ve donated over 1,000 meals to<br />
+              communities in need, ensuring everyone has access to nutritious
+              food.
+            </p>
           </div>
         </div>
       </div>
-    </div>
-    <div class="address">
-      <div>
-        <h1>Power Bowls</h1>
-        <p>
-          Crafted with fresh, organic ingredients, each bowl is a perfect
-          balance of proteins, healthy fats, and vibrant vegetables. Whether
-          you're seeking a plant-based boost or a protein-packed meal, our Power
-          Bowls provide wholesome, delicious options that nourish and satisfy.
-        </p>
-      </div>
-
-      <div>
-        <div class="maps">
-          <div class="mapswrapper">
-            <iframe
-              width="658"
-              height="304"
-              loading="lazy"
-              allowfullscreen
-              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=New%20York&zoom=10&maptype=roadmap"
-            ></iframe
-            ><a href="https://www.fluxpromptgenerator.net"
-              >Flux Prompt Generator</a
-            ><style>
-              .mapswrapper {
-                background: #fff;
-                position: relative;
-              }
-              .mapswrapper iframe {
-                border: 0;
-                position: relative;
-                z-index: 2;
-              }
-              .mapswrapper a {
-                color: rgba(0, 0, 0, 0);
-                position: absolute;
-                left: 0;
-                top: 0;
-                z-index: 0;
-              }
-            </style>
+      <div class="content5">
+        <article>
+          <h1>Why Choose <span>Eco Eats?</span></h1>
+          <p>
+            At Eco Eats, we believe that healthy eating should never compromise
+            on flavor. Our dishes are crafted from sustainably sourced
+            ingredients, ensuring that every bite is not only delicious but also
+            good for the planet. Join us in our mission to promote wellness
+            through nutritious meals that cater to all dietary preferences.
+          </p>
+          <div>
+            <figure>
+              <img src="/img/unsplash_n8vDuIpGb0c.png" alt="" />
+              <figcaption>
+                <h3>100% Organic & Locally Sourced</h3>
+                <p>
+                  Every dish is made from pure, sustainably grown ingredients.
+                  No chemicals, no preservatives—just food the way nature
+                  intended.
+                </p>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="/img/unsplash_xmibn7mzXV0.png" alt="" />
+              <figcaption>
+                <h3>Eco-Friendly Practices</h3>
+                <p>
+                  We’re committed to reducing our carbon footprint. From our
+                  biodegradable packaging to minimizing food waste,
+                  sustainability is at the heart of everything we do.
+                </p>
+              </figcaption>
+            </figure>
+            <figure>
+              <img src="/img/unsplash_Orz90t6o0e4.png" alt="" />
+              <figcaption>
+                <h3>Tailored to Your Lifestyle</h3>
+                <p>
+                  Vegan, gluten-free, paleo? We’ve got you covered. Our diverse
+                  menu ensures that there’s something for everyone, regardless
+                  of dietary preference.
+                </p>
+              </figcaption>
+            </figure>
           </div>
+        </article>
+      </div>
+      <div class="content6">
+        <div>
+          <h1>
+            Sustainable Journey from Farm to Table at <span>Eco Eats</span>
+          </h1>
+          <div>
+            <p>
+              Our ingredients are sourced from local farms that prioritize
+              sustainable practices, ensuring every meal is not only delicious
+              but also environmentally friendly. From the moment we select our
+              produce to the time we serve your meal, quality is our top
+              priority.
+            </p>
+            <button type="button" class="btn btn-lg px-4">
+              <font style="vertical-align: inherit"
+                ><font style="vertical-align: inherit">See All Menu</font></font
+              >
+            </button>
+          </div>
+        </div>
+        <figure>
+          <div class="img1">
+            <h3>Power Bowls</h3>
+            <p>Loaded with nutrient-packed greens, grains, and proteins.</p>
+          </div>
+          <div class="img2">
+            <h3>Smoothie Bliss</h3>
+            <p>
+              Blended to perfection with superfoods and plant-based goodness.
+            </p>
+          </div>
+          <div class="img3">
+            <h3>Organic Wraps & Salads</h3>
+            <p>
+              Fresh, light, and satisfying meals to keep you energized all day
+              long.
+            </p>
+          </div>
+        </figure>
+      </div>
+      <div class="content7">
+        <div>
+          <h1>Power Bowls</h1>
+          <p>
+            Crafted with fresh, organic ingredients, each bowl is a perfect
+            balance of proteins, healthy fats, and vibrant vegetables. Whether
+            you're seeking a plant-based boost or a protein-packed meal, our
+            Power Bowls provide wholesome, delicious options that nourish and
+            satisfy.
+          </p>
+        </div>
+        <div class="menu">
+          <figure>
+            <img src="/img/Image.png" alt="" />
+            <figcaption>
+              <h4>Green Energy Bowl</h4>
+              <p>Packed with superfoods to fuel your day.</p>
+              <div>
+                <h3>$10.99</h3>
+                <button type="button" class="btn btn-warning">Order Now</button>
+              </div>
+            </figcaption>
+          </figure>
 
+          <figure>
+            <img src="/img/Image+Avatar.png" alt="" />
+            <figcaption>
+              <h4>Mediterranean Bliss Bowl</h4>
+              <p>A taste of the Mediterranean, bursting with flavor.</p>
+              <div>
+                <h3>$11.49</h3>
+                <button type="button" class="btn btn-warning">Order Now</button>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="/img/Image (1).png" alt="" />
+            <figcaption>
+              <h4>Protein Powerhouse Bowl</h4>
+              <p>The perfect balance of protein and nutrition.</p>
+              <div>
+                <h3>$12.49</h3>
+                <button type="button" class="btn btn-warning">Order Now</button>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="/img/Image (2).png" alt="" />
+            <figcaption>
+              <h4>Tropical Bowl</h4>
+              <p>A refreshing blend of tropical flavors.</p>
+              <div>
+                <h3>$11.99</h3>
+                <button type="button" class="btn btn-warning">Order Now</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="content7">
+        <div>
+          <h1>Power Bowls</h1>
+          <p>
+            Crafted with fresh, organic ingredients, each bowl is a perfect
+            balance of proteins, healthy fats, and vibrant vegetables. Whether
+            you're seeking a plant-based boost or a protein-packed meal, our
+            Power Bowls provide wholesome, delicious options that nourish and
+            satisfy.
+          </p>
+        </div>
+        <div class="menu">
+          <figure>
+            <img src="/img/Image.png" alt="" />
+            <figcaption>
+              <h4>Green Energy Bowl</h4>
+              <p>Packed with superfoods to fuel your day.</p>
+              <div>
+                <h3>$10.99</h3>
+                <button type="button" class="btn btn-warning">Order Now</button>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="/img/Image+Avatar.png" alt="" />
+            <figcaption>
+              <h4>Mediterranean Bliss Bowl</h4>
+              <p>A taste of the Mediterranean, bursting with flavor.</p>
+              <div>
+                <h3>$11.49</h3>
+                <button type="button" class="btn btn-warning">Order Now</button>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="/img/Image (1).png" alt="" />
+            <figcaption>
+              <h4>Protein Powerhouse Bowl</h4>
+              <p>The perfect balance of protein and nutrition.</p>
+              <div>
+                <h3>$12.49</h3>
+                <button type="button" class="btn btn-warning">Order Now</button>
+              </div>
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img src="/img/Image (2).png" alt="" />
+            <figcaption>
+              <h4>Tropical Bowl</h4>
+              <p>A refreshing blend of tropical flavors.</p>
+              <div>
+                <h3>$11.99</h3>
+                <button type="button" class="btn btn-warning">Order Now</button>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="content8">
+        <div>
+          <div>
+            <h1>What Our Customers Are Saying</h1>
+            <img src="/img/unsplash_r_VLi4NDa9c.png" alt="" />
+          </div>
           <div class="text">
+            <img
+              src="/img/Highlight-Quote-Left--Streamline-Beveled-Scribbles.png"
+              alt=""
+            />
             <div>
-              <h3>Eco Eats NYC</h3>
-              <p>123 Greenway AvenueNew York, NY 10001(212) 555-1234</p>
-            </div>
-            <div>
-              <h3>Hours of Operation</h3>
-              <p>
-                Monday Friday: 8 AM 8 PMSaturday: 9 AM 9 PM Sunday: 9 AM b6 PM
-              </p>
+              <h3>
+                Eco Eats has completely transformed the way I eat! The food is
+                fresh, flavorful, and I love knowing that everything is 100%
+                organic. My go-to for a quick, healthy meal!
+              </h3>
+              <p>— Sarah M., Loyal Customer</p>
             </div>
           </div>
         </div>
-
-        <form action="">
-          <input placeholder="Name" />
-          <input placeholder="Email Address" />
-          <input placeholder="Phone Number" />
-          <input placeholder="Date" />
-          <input placeholder="Time" />
-          <input placeholder="Number of Guests" />
-          <input placeholder="Special Requests" />
-          <button type="button" class="btn btn-warning">Reserve Now</button>
-        </form>
       </div>
-    </div>
-  </section>
-    <footer>
+      <div class="address">
+        <div>
+          <h1>Power Bowls</h1>
+          <p>
+            Crafted with fresh, organic ingredients, each bowl is a perfect
+            balance of proteins, healthy fats, and vibrant vegetables. Whether
+            you're seeking a plant-based boost or a protein-packed meal, our
+            Power Bowls provide wholesome, delicious options that nourish and
+            satisfy.
+          </p>
+        </div>
 
+        <div>
+          <div class="maps">
+            <div class="mapswrapper">
+              <iframe
+                width="100%"
+                height="304"
+                loading="lazy"
+                allowfullscreen
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=New%20York&zoom=10&maptype=roadmap"
+              ></iframe
+              ><a href="https://www.fluxpromptgenerator.net"
+                >Flux Prompt Generator</a
+              ><style>
+                .mapswrapper {
+                  background: #fff;
+                  position: relative;
+                }
+                .mapswrapper iframe {
+                  border: 0;
+                  position: relative;
+                  z-index: 2;
+                }
+                .mapswrapper a {
+                  color: rgba(0, 0, 0, 0);
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  z-index: 0;
+                }
+              </style>
+            </div>
+
+            <div class="text">
+              <div>
+                <h3>Eco Eats NYC</h3>
+                <p>123 Greenway AvenueNew York, NY 10001(212) 555-1234</p>
+              </div>
+              <div>
+                <h3>Hours of Operation</h3>
+                <p>
+                  Monday Friday: 8 AM 8 PMSaturday: 9 AM 9 PM Sunday: 9 AM b6 PM
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <form action="">
+            <input placeholder="Name" />
+            <input placeholder="Email Address" />
+            <input placeholder="Phone Number" />
+            <input placeholder="Date" />
+            <input placeholder="Time" />
+            <input placeholder="Number of Guests" />
+            <input placeholder="Special Requests" />
+            <button type="button" class="btn btn-warning">Reserve Now</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
       <div class="footer">
         <a href="#">
           <img src="/img/logo.png" alt="Logo" />
@@ -519,9 +536,8 @@
       </ul>
       <div>
         <p>Follow Us</p>
-        <img src="/img/Frame 427319178.png" alt="">
+        <img src="/img/Frame 427319178.png" alt="" />
       </div>
-
     </footer>
   </body>
 </html>
