@@ -27,7 +27,7 @@ body {
   background-color: rgb(208, 202, 195);
 }
 
-section {
+main {
   margin: 0 auto;
   max-width: 1728px;
   background-color: #fff;
@@ -37,7 +37,7 @@ section {
   padding-right: 244px;
 }
 @media (min-width: 370px) and (max-width: 1718px) {
-  section {
+  main {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -310,7 +310,7 @@ header > div .btn:hover {
   box-shadow: 7px 7px 18px #6c6c6c, -7px -7px 18px #ffffff;
   height: 384px;
   width: 286px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
 .menu figure img {
   border-radius: 27px 27px 0 0;
@@ -442,7 +442,7 @@ footer div, footer ul {
 /* Styles of a dark topic */
 body.dark-theme {
   color: #eee;
-  background: #000000;
+  background: #682a08;
 }
 body.dark-theme a {
   color: #eee;
@@ -464,11 +464,11 @@ body.dark-theme nav {
   color: #eee;
   background: #121212;
 }
-body.dark-theme section {
+body.dark-theme main {
   color: #eee;
   background: #121212;
 }
-body.dark-theme section .content7 figure {
+body.dark-theme main .content7 figure {
   color: #eee;
   background: #121212;
 }
@@ -477,10 +477,6 @@ body.dark-theme footer {
   background: #121212;
 }
 
-/* From Uiverse.io by Type-Delta */
-/* a clone from joshwcomeau.com 
- * but this version runs on pure CSS
- */
 .themeToggle {
   color: #bbb;
   width: 3em;

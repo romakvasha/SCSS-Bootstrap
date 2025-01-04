@@ -50,7 +50,7 @@ html {
 body{
     background-color: rgb(208, 202, 195);
 }
-section {
+main {
     margin: 0 auto;
     max-width: 1728px;
     background-color: $color_2;
@@ -83,10 +83,6 @@ nav {
         background-color: $color_1;
     }
 }
-
-
-
-
 
 header {
     button {
@@ -320,7 +316,7 @@ header {
         height: 384px;
         width: 286px;
         @extend %flex-column;
-        margin-bottom: 30px;
+        margin-bottom: 60px;
         img{
             border-radius: 27px 27px 0 0;
         }
@@ -466,7 +462,7 @@ footer{
   /* Styles of a dark topic */
   body.dark-theme {
     color: #eee;
-    background: #000000;
+    background: #682a08;
     a{
         color: #eee;
         &:hover,&:focus{
@@ -487,7 +483,7 @@ footer{
         color: #eee;
         background: #121212;
     }
-        section{
+        main{
         color: #eee;
         background: #121212;
         .content7{
@@ -502,10 +498,6 @@ footer{
         background: #121212;
     }
   }
-/* From Uiverse.io by Type-Delta */ 
-/* a clone from joshwcomeau.com 
- * but this version runs on pure CSS
- */
 
  .themeToggle {
     color: #bbb;
