@@ -50,30 +50,23 @@ html {
 body{
     background-color: rgb(208, 202, 195);
 }
-main {
-    margin: 0 auto;
-    max-width: 1728px;
-    background-color: $color_2;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    padding-left: 244px;
-    padding-right: 244px;
-    @media (min-width: 370px) and (max-width: 1718px) {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-}
+
 
 nav {
     background-color:$color_2;
     max-width: 1728px;
-    max-height: 154px;
+    min-height: 100px;
     margin: 0 auto;
     padding: 0 244px;
-    
+    font-size:x-large;
     .collapse{
         justify-content: flex-end;
+        ul{
+            align-items: center;
+        }
+        
     }
+
 }
 .login  {
     margin: 20px;
@@ -107,6 +100,20 @@ header {
     }
 }
 }
+
+main {
+    margin: 0 auto;
+    max-width: 1728px;
+    background-color: $color_2;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    @media (min-width: 370px) and (max-width: 1718px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+} 
 
 .foto {
     @extend %flex-row;
@@ -435,8 +442,8 @@ form{
 }
 
 footer{
-    padding-left: 244px;
-    padding-right: 244px;
+    padding-left: 100px;
+    padding-right: 100px;
     @extend %flex-row;
     justify-content: space-between;
     align-items: stretch; 
@@ -460,9 +467,10 @@ footer{
     }
 }
   /* Styles of a dark topic */
+
   body.dark-theme {
     color: #eee;
-    background: #682a08;
+    background-color: #121212;;
     a{
         color: #eee;
         &:hover,&:focus{
@@ -473,7 +481,7 @@ footer{
         color: #eee;
         div{
             color: #eee;
-            background: #121212;
+            background-color: #444;
             h1{
                 color: #eee;
             }
@@ -481,21 +489,25 @@ footer{
     }
     nav{
         color: #eee;
-        background: #121212;
+        background-color: #242220;
+        .navbar-toggler{
+            background-color: #545454;
+        }
     }
         main{
         color: #eee;
-        background: #121212;
+        background-color: #444;
         .content7{
             figure{
                 color: #eee;
-                background: #121212;
+                background-color: #545454;
             }
         }
     }
     footer {
         color: #eee;
-        background: #121212;
+        background-color: #242220;;
+        ;
     }
   }
 

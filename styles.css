@@ -27,31 +27,19 @@ body {
   background-color: rgb(208, 202, 195);
 }
 
-main {
-  margin: 0 auto;
-  max-width: 1728px;
-  background-color: #fff;
-  padding-bottom: 50px;
-  padding-top: 50px;
-  padding-left: 244px;
-  padding-right: 244px;
-}
-@media (min-width: 370px) and (max-width: 1718px) {
-  main {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-}
-
 nav {
   background-color: #fff;
   max-width: 1728px;
-  max-height: 154px;
+  min-height: 100px;
   margin: 0 auto;
   padding: 0 244px;
+  font-size: x-large;
 }
 nav .collapse {
   justify-content: flex-end;
+}
+nav .collapse ul {
+  align-items: center;
 }
 
 .login {
@@ -81,6 +69,22 @@ header > div .btn {
 }
 header > div .btn:hover {
   background-color: #FF6F40;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1728px;
+  background-color: #fff;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+@media (min-width: 370px) and (max-width: 1718px) {
+  main {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .foto figure {
@@ -414,8 +418,8 @@ form .btn:hover {
 }
 
 footer {
-  padding-left: 244px;
-  padding-right: 244px;
+  padding-left: 100px;
+  padding-right: 100px;
   justify-content: space-between;
   align-items: stretch;
   background-color: #000000;
@@ -442,7 +446,7 @@ footer div, footer ul {
 /* Styles of a dark topic */
 body.dark-theme {
   color: #eee;
-  background: #682a08;
+  background-color: #121212;
 }
 body.dark-theme a {
   color: #eee;
@@ -455,26 +459,29 @@ body.dark-theme header {
 }
 body.dark-theme header div {
   color: #eee;
-  background: #121212;
+  background-color: #444;
 }
 body.dark-theme header div h1 {
   color: #eee;
 }
 body.dark-theme nav {
   color: #eee;
-  background: #121212;
+  background-color: #242220;
+}
+body.dark-theme nav .navbar-toggler {
+  background-color: #545454;
 }
 body.dark-theme main {
   color: #eee;
-  background: #121212;
+  background-color: #444;
 }
 body.dark-theme main .content7 figure {
   color: #eee;
-  background: #121212;
+  background-color: #545454;
 }
 body.dark-theme footer {
   color: #eee;
-  background: #121212;
+  background-color: #242220;
 }
 
 .themeToggle {
